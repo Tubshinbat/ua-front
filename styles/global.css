@@ -1191,6 +1191,7 @@ table th {
 .new-news-slide {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   font-size: 18px;
   z-index: 2;
   /* height: calc((100%) / 3) !important; */
