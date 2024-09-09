@@ -11,12 +11,12 @@ import Media from "components/Home/Media";
 import Books from "components/Home/Books";
 import Partners from "components/General/Partners";
 import HeaderSticky from "components/General/HeaderSticky";
-import { getUpBanner } from "lib/getFetchers";
 
 export default function Page() {
   const [cookies, setCookie] = useCookies(["language"]);
 
   useEffect(() => {
+    AOS.init();
     window.onscroll = () => {
       let header = document.querySelector(".header");
       let headertwo = document.querySelector(".header-two");
@@ -38,7 +38,6 @@ export default function Page() {
       }
     };
     if (!cookies.language) setCookie("language", "mn", { path: "/" });
-    AOS.init();
   }, []);
 
   return (

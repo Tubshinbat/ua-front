@@ -2,27 +2,28 @@ import Partners from "components/General/Partners";
 import { getWebInfo } from "lib/getFetchers";
 
 export async function generateMetadata({ params }) {
-    const { info } = await getWebInfo();
+  const { info } = await getWebInfo();
 
-    let title = `NAOG.GOV.MN`;
-    if (info) {
-        title = "Медиа - " + info['mn'].name + " - " + title;
-    }
+  let title = `NAOG.GOV.MN`;
+  if (info) {
+    title = "Медиа - " + info["mn"].name + " - " + title;
+  }
 
+  let openGraph = {
+    images: "/images/share-bg.png",
+  };
 
-    return {
-        title,
-    };
+  return {
+    title,
+    openGraph,
+  };
 }
 
 export default function RootLayout({ children }) {
-
-
-
-    return (
-        <>
-            {children}
-            <Partners />
-        </>
-    );
+  return (
+    <>
+      {children}
+      <Partners />
+    </>
+  );
 }

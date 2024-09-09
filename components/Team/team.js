@@ -5,6 +5,7 @@ import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import base from "lib/base";
 import { useCookies } from "react-cookie";
+import Link from "next/link";
 
 const Team = ({ memberData, boolenPop = true }) => {
   const [pop, setPop] = useState(false);
@@ -22,31 +23,36 @@ const Team = ({ memberData, boolenPop = true }) => {
     else lang = "mn";
   } else lang = cookies.language;
 
-
   return (
     <>
       <div className="col-lg-3 col-md-6">
-        <div className={styles.Team} onClick={handleClick}>
-          <div className={styles.UserImg}>
-            {memberData.picture ? (
-              <img src={base.cdnUrl + "/" + memberData.picture} />
-            ) : (
-              <img src={"/assets/img/no-photo.jpg"} />
-            )}
+        <a
+          href={`/members/${memberData._id}`}
+          target="_blank"
+          className={styles.TeamTarget}
+        >
+          <div className={styles.Team}>
+            <div className={styles.UserImg}>
+              {memberData.picture ? (
+                <img src={base.cdnUrl + "/" + memberData.picture} />
+              ) : (
+                <img src={"/assets/img/no-photo.jpg"} />
+              )}
+            </div>
+            <p>{memberData[lang].name}</p>
+            <span>{memberData[lang].degree}</span>
           </div>
-          <p>
-            {memberData[lang].name}
-          </p>
-          <span>{memberData[lang].degree}</span>
-        </div>
+        </a>
       </div>
       <div
-        className={`${styles.BlackBg} ${pop === true ? styles.DisplayFlex : styles.DisplayOff
-          }`}
+        className={`${styles.BlackBg} ${
+          pop === true ? styles.DisplayFlex : styles.DisplayOff
+        }`}
       >
         <div
-          className={`${styles.Window} animate__animated animate__fadeIn ${pop === true ? styles.DisplayOn : styles.DisplayOff
-            }`}
+          className={`${styles.Window} animate__animated animate__fadeIn ${
+            pop === true ? styles.DisplayOn : styles.DisplayOff
+          }`}
         >
           <FontAwesomeIcon
             icon={faTimes}
@@ -59,13 +65,13 @@ const Team = ({ memberData, boolenPop = true }) => {
               className={styles.WindowImg}
             />
           ) : (
-            <img src={"/assets/img/no-photo.jpg"} className={styles.WindowImg} />
+            <img
+              src={"/assets/img/no-photo.jpg"}
+              className={styles.WindowImg}
+            />
           )}
           <div className={styles.Info}>
-            <h6>
-              {" "}
-              {memberData[lang].name}
-            </h6>
+            <h6> {memberData[lang].name}</h6>
             <span> {memberData[lang].degree} </span>
             <p dangerouslySetInnerHTML={{ __html: memberData[lang].about }}></p>
           </div>
