@@ -8,7 +8,7 @@ export async function generateMetadata() {
   }
 
   let openGraph = {
-    images: "/images/share-bg.png",
+    images: `${base.baseUrl}/images/share-bg.png`,
   };
 
   return {

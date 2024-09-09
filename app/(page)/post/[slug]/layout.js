@@ -21,7 +21,7 @@ export async function generateMetadata({ params }) {
       images:
         news && news.pictures && news.pictures[0]
           ? base.cdnUrl + "/" + news.pictures[0]
-          : "/images/share-bg.png",
+          : `${base.baseUrl}/images/share-bg.png`,
     },
   };
 }

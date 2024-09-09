@@ -9,7 +9,7 @@ export async function generateMetadata({ params }) {
     title = "Медиа - " + info["mn"].name + " - " + title;
   }
   let openGraph = {
-    images: "/images/share-bg.png",
+    images: `${base.baseUrl}/images/share-bg.png`,
   };
 
   return {

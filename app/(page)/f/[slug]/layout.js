@@ -10,7 +10,7 @@ export async function generateMetadata({ params }) {
   if (info) title = info["mn"].name + " - " + title;
 
   let openGraph = {
-    images: "/images/share-bg.png",
+    images: `${base.baseUrl}/images/share-bg.png`,
   };
 
   if (page && page[0]) {
