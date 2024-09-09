@@ -1,4 +1,5 @@
 import Partners from "components/General/Partners";
+import base from "lib/base";
 import { getWebInfo } from "lib/getFetchers";
 
 export async function generateMetadata({ params }) {

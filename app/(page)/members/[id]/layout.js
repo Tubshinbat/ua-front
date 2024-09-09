@@ -6,9 +6,12 @@ export async function generateMetadata({ params }) {
 
   let title = `NAOG.GOV.MN`;
   let description = "NAOG.GOV.MN";
-
+  let openGraph = {
+    images: `${base.baseUrl}/images/share-bg.png`,
+  };
   return {
     title,
+    openGraph,
   };
 }
 

@@ -1,3 +1,4 @@
+import base from "lib/base";
 import { getWebInfo } from "lib/getFetchers";
 
 export async function generateMetadata() {

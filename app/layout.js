@@ -20,6 +20,7 @@ import Footer from "components/General/Footer";
 import Spinner from "components/General/Spinner";
 import { getWebInfo } from "lib/getFetchers";
 import Head from "next/head";
+import base from "lib/base";
 
 export async function generateMetadata({ params }) {
   const { info } = await getWebInfo();
