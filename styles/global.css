@@ -111,7 +111,7 @@ h6 {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
-  font-family: "Raleway", sans-serif;
+  font-family: "DinPro", sans-serif;
   flex-wrap: wrap;
 }
 
@@ -147,7 +147,7 @@ h6 {
 }
 
 .section-header h3 {
-  font-family: "Raleway", sans-serif;
+  font-family: "DinPro", sans-serif;
   font-weight: 900;
   text-transform: uppercase;
   margin-bottom: 0px;
@@ -155,7 +155,7 @@ h6 {
 }
 
 .section-header h5 {
-  font-family: "Raleway", sans-serif;
+  font-family: "DinPro", sans-serif;
   font-weight: 900;
   text-transform: uppercase;
   margin-bottom: 0px;
@@ -163,7 +163,7 @@ h6 {
 }
 
 .section-header h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "DinPro", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 0px;
@@ -642,7 +642,7 @@ table th {
 
 .top-news-box-dtls .top-news-title h4 {
   font-size: 18px;
-  font-family: "Raleway", sans-serif;
+  font-family: "DinPro", sans-serif;
   font-weight: 600;
   margin: 15px 0px;
 }
@@ -654,7 +654,7 @@ table th {
 }
 
 .top-news-box-cat {
-  font-family: "Raleway", sans-serif;
+  font-family: "DinPro", sans-serif;
   font-size: 10px;
   padding: 5px 10px;
   color: #fff;
@@ -705,7 +705,7 @@ table th {
 }
 
 .new-news-category a {
-  font-family: "Raleway", sans-serif;
+  font-family: "DinPro", sans-serif;
   font-size: 10px;
   padding: 6px 10px;
   color: #fff;
@@ -965,7 +965,7 @@ table th {
 ------------------------------- */
 
 .footer {
-  font-family: "Raleway", sans-serif;
+  font-family: "DinPro", sans-serif;
   background-color: #063158;
   padding: 45px 0px;
   height: 100%;
@@ -1134,7 +1134,7 @@ table th {
   width: 100%;
   height: 500px !important;
   overflow: hidden;
-  font-family: "Raleway", sans-serif;
+  font-family: "DinPro", sans-serif;
 }
 
 .new-news-slider-box {
@@ -1298,7 +1298,7 @@ table th {
 
 .slide__title {
   opacity: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: "DinPro", sans-serif;
   font-weight: 800;
   font-size: 30px;
   line-height: 40px;
@@ -1525,7 +1525,7 @@ table th {
   position: relative;
   background-color: #fcfcfc;
   border: 1px solid #f0f0f0;
-  font-family: "Raleway", sans-serif;
+  font-family: "DinPro", sans-serif;
   background: url("/images/logo-p-bg-2.png");
   background-repeat: no-repeat;
   background-position: right 0px bottom 0px;
@@ -1783,7 +1783,7 @@ table th {
 ------------------------------- */
 
 .page-about {
-  font-family: "Raleway", sans-serif;
+  font-family: "DinPro", sans-serif;
 }
 
 .media-about iframe {
@@ -2124,7 +2124,7 @@ table th {
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  font-family: "Raleway", sans-serif;
+  font-family: "DinPro", sans-serif;
 }
 
 .menuMobile h5 {
