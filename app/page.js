@@ -11,6 +11,7 @@ import Media from "components/Home/Media";
 import Books from "components/Home/Books";
 import Partners from "components/General/Partners";
 import HeaderSticky from "components/General/HeaderSticky";
+import HomeSecound from "components/HomeSecound/HomeSecound";
 
 export default function Page() {
   const [cookies, setCookie] = useCookies(["language"]);
@@ -42,7 +43,8 @@ export default function Page() {
 
   return (
     <>
-      <section className="header-section">
+      <HomeSecound />
+      {/* <section className="header-section">
         <Header />
         <HeaderSticky />
         <Banner />
@@ -52,7 +54,7 @@ export default function Page() {
       <TopNews />
       <Media />
       <Books />
-      <Partners />
+      <Partners /> */}
     </>
   );
 }
