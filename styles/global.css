@@ -1090,6 +1090,8 @@ table th {
 }
 
 .site__nav_one {
+  position: relative;
+  z-index: 6;
   display: flex;
   flex-direction: column;
   gap: 24px;
