@@ -106,7 +106,7 @@ const FullMenu = ({ isOpen, toggleMenu }) => {
           <li
             key={el._id}
             onClick={() =>
-              windowWidth >= 767 && el._id != active._id && handleMenu(el)
+              windowWidth >= 767 && el?._id != active?._id && handleMenu(el)
             }
             className={
               renderMenuClass(el._id) + `${isChildren ? " site__nav_drop" : ""}`
