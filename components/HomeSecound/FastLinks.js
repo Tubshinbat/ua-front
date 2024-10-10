@@ -1,5 +1,5 @@
 "use client";
-import { isArray } from "highcharts";
+
 import { useEffect, useState } from "react";
 import { useCookies } from "react-cookie";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -72,7 +72,6 @@ const FastLinks = () => {
           className="fast__links"
         >
           {data &&
-            isArray(data) &&
             data.map((el) => (
               <SwiperSlide className="fastlink__slide_item" key={el._id}>
                 <Link

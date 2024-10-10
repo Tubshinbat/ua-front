@@ -1,4 +1,3 @@
-import { isArray } from "highcharts";
 import base from "lib/base";
 import { getBanners, getMenus, getTopLinks, getWebInfo } from "lib/getFetchers";
 import { languageRender } from "lib/language";
@@ -100,7 +99,7 @@ const FullMenu = ({ isOpen, toggleMenu }) => {
     let myCategories = [];
 
     categories &&
-      isArray(categories) &&
+      categories.length > 0 &&
       categories.map((el) => {
         const isChildren = el.children.length > 0;
         myCategories.push(
@@ -176,7 +175,7 @@ const FullMenu = ({ isOpen, toggleMenu }) => {
     let myCategories = [];
 
     categories &&
-      isArray(categories) &&
+      categories.length > 0 &&
       categories.map((el) => {
         const isChildren = el.children.length > 0;
         myCategories.push(
@@ -231,7 +230,7 @@ const FullMenu = ({ isOpen, toggleMenu }) => {
     let myCategories = [];
 
     categories &&
-      isArray(categories) &&
+      categories.length > 0 &&
       categories.map((el) => {
         myCategories.push(
           <li key={el._id} className="site__nav_item">
@@ -372,7 +371,6 @@ const FullMenu = ({ isOpen, toggleMenu }) => {
             <span>Хэрэгтэй холбоосууд</span>
             <div className="quick_links">
               {toplinks &&
-                isArray(toplinks) &&
                 toplinks.map((el) => {
                   let link = "#";
                   if (el.direct) link = el.direct;

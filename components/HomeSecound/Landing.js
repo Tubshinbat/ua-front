@@ -24,7 +24,7 @@ import { getBanners, getSocialLinks, getWebInfo } from "lib/getFetchers";
 import { useCookies } from "react-cookie";
 import { gsap } from "gsap";
 import base from "lib/base";
-import { isArray } from "highcharts";
+
 import { languageRender } from "lib/language";
 import Link from "next/link";
 import { lang } from "moment";
@@ -139,7 +139,6 @@ const Landing = () => {
           onSwiper={(swiper) => setActiveIndex(swiper.activeIndex)}
         >
           {data &&
-            isArray(data) &&
             data.map((banner, index) => {
               return (
                 <SwiperSlide className={renderSlideClasses(index)} key={index}>

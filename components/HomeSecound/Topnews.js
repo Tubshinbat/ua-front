@@ -1,4 +1,3 @@
-import { isArray } from "highcharts";
 import { getNews } from "lib/getFetchers";
 import { languageRender } from "lib/language";
 import Link from "next/link";
@@ -38,7 +37,6 @@ const Topnews = () => {
       <div className="container">
         <div className="top__items wow animate__animated animate__fadeInUp">
           {data &&
-            isArray(data) &&
             data.map((el, index) => (
               <>
                 <div key={el._id} className="top__item has-target-link">
